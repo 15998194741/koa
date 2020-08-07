@@ -1,0 +1,16 @@
+/**
+* 由模板自动生成
+*/
+import { dbSequelize } from '../../config';
+import BaseDao from '../../lib/base-dao';
+import { ${objectName}DO } from '../models/${fileName}';
+const ${objectName}Model = dbSequelize.import('./../models/${fileName}');
+${objectName}Model.sync({ force: false });
+class ${className}Dao extends BaseDao {
+  constructor() {
+    super(${objectName}Model, ${objectName}DO);
+  }
+
+}
+
+export default new ${className}Dao();

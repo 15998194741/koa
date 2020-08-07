@@ -1,0 +1,22 @@
+{
+  "apps": [
+    {
+      "name": "server-template-dev",
+      "script": "start.js",
+      "log_date_format": "YYYY-MM-DD HH:mm:ss:S Z",
+      "ignore_watch": [
+        "node_modules",
+        "test",
+        "src/logs",
+        "src/utils/file_tem",
+        "src/utils/template-file"
+      ],
+      "env": {
+        "PORT": 5000,
+        "NODE_ENV": "production"
+      },
+      "watch": true,
+      "max_restarts": 100
+    }
+  ]
+}

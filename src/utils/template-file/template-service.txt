@@ -1,0 +1,13 @@
+import ${objectName}Dao from '../dao/${fileName}';
+import { ${objectName}DO } from '../models/${fileName}';
+import BaseService from '../../lib/base-service';
+import statusCode from '../../utils/status-code';
+const beanUtils = require('../../utils/bean-utils');
+class ${className}Service extends BaseService{
+  constructor() {
+    super(${objectName}Dao);
+  }
+
+}
+
+export default new ${className}Service();

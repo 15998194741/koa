@@ -1,0 +1,9 @@
+let ${objectName}DO = {};
+export { ${objectName}DO }
+export default function(sequelize, DataTypes) {
+  const models = ${attributes};
+  for(let key in models) {
+    ${objectName}DO[key] = '';
+  }
+  return sequelize.define('${tableName}', models);
+}
